@@ -5,13 +5,14 @@ This is a batch file that automates everything from Windows VPN connection to re
 * You need to be able to connect to the VPN server with a fixed IP address, etc.
 * You need to set up port forwarding on your router.
 * The connected Windows terminal must be capable of remote desktop connection.
+* WoL must be executable to enforce WoL.
 ## execution procedure
 Set the following properties according to your environment.
 * VPN server connection information settings
 ```
 $server = ''
-$ipaddress = ''
 $hub = ''
+$ServerAddress = ''
 $L2tpPsk = ''
 ```
 
@@ -21,11 +22,17 @@ $user = ''
 $pass = ''
 ```
 
+* WoL configuration information
+```
+$macaddress = ''
+$broadcastaddress = ''
+$IPAddress = ''
+```
+
 * Remote desktop connection information settings
 ```
 $userName = ''
-$pcName = ''
 ```
 
 ## Detailed information (Japanese)
-making…
+https://qiita.com/shokun0803/items/def4683a1b4d5c2aeabf
